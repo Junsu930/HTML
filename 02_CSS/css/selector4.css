@@ -99,5 +99,7 @@ nth-child(수열)
 }
 
 
-
+#test3>li:not(:nth-child(2n)){
+	background-color: red;
+}
 
