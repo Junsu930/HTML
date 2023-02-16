@@ -98,7 +98,7 @@
 
 
     /* space-evenly에서 양 끝을 flex-container에 붙게함 */
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
     /****************/
     /* align-items */
@@ -118,6 +118,7 @@
     /* 조건 : item에 cross axis방향의 크기 지정 속성이 없어야함 */
     /* align-items: stretch; */
 
+
     /* 시작부분 기준 */
     /* align-items: flex-start; */
 
@@ -132,9 +133,6 @@
     */
     align-items: baseline;
 
-
-
-   
 }
 
 .item2 {padding: 10px;}

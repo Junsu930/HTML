@@ -1,0 +1,51 @@
+
+
+div{
+    margin: 4px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 1500px;
+    height: 600px;
+}
+
+.Header{
+    background-color: gainsboro;
+    height: 20%;
+}
+
+.nav{
+    background-color: gainsboro;
+    height: 12%;
+}
+
+.content-container{
+    display: flex;
+    height: 50%;
+    justify-content: space-between;
+    margin: 4px 0;
+}
+
+.Content1{
+    background-color: gainsboro;
+    flex-basis: 20%;
+}
+
+.Main-Content{
+    background-color: gainsboro;
+    flex-basis: 60%;
+}
+
+.Content2{
+    background-color: gainsboro;
+    flex-basis:20%;
+}
+
+.footer{
+    background-color: gainsboro;
+    height: 18%;
+}
+
+

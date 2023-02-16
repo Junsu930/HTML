@@ -41,10 +41,10 @@
 (기본값 1)
 */
 .shrink0{flex-shrink: 1;}
-.shrink1{flex-shrink: 1;}
-.shrink2{flex-shrink: 1;}
-.shrink3{flex-shrink: 1;}
-.shrink4{flex-shrink: 1;}
+.shrink1{flex-shrink: 2;}
+.shrink2{flex-shrink: 3;}
+.shrink3{flex-shrink: 4;}
+.shrink4{flex-shrink: 5;}
 
 
 /****************/
@@ -80,3 +80,4 @@
 .self-center{
     align-self: center;
 }
+

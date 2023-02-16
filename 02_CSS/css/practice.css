@@ -1,0 +1,157 @@
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    /* 바디 태그의 기본 마진 제거 */
+}
+
+.content1{
+    width : 1140px;
+    margin:auto;
+}
+
+#github-image{
+    width: 50px;
+    height: 50px;
+}
+
+.header{
+    height: 70px;
+    display : flex;
+    background-color: #1B1F23;
+}
+
+.header > div:nth-child(1){
+    flex-basis: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.header > div:nth-child(2){
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.github-menu-bar a {
+    color:white;
+    text-decoration: none;
+}
+
+.fa-angle-down{
+    padding: 5px;
+    padding-right: 10px;
+}
+.header > div:nth-child(3){
+    flex-basis: 20%;
+}
+.header > div:nth-child(4){
+    flex-basis: 18%;
+}
+
+
+
+.search-area{
+    width: 270px; 
+     
+}
+
+.search-area fieldset{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid gray;
+    border-radius: 5%; 
+}
+
+#search-github-main{
+    width: 90%;
+    padding : 1px;
+    font-size: 17px;
+    border : none;
+    outline: 0;
+    background-color: transparent;
+    color: white;
+}
+
+
+.search-github{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-button{
+    width: 10%;
+    border-radius: 5%;
+    background-color: transparent;
+    border: 1px solid gray;
+    color:grey;
+}
+
+.sign-menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sign-menu a{
+    font-size: 17px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sign-menu > div:last-child> a{
+    border:2px solid gray;
+    border-radius: 7%;
+}
+
+.menulist > ul {
+    padding: 25px;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content : space-between;
+}
+.menulist li{
+    list-style: none;
+    padding-right: 10px;
+}
+
+.menulist{
+    flex-basis: 70%;
+    display: flex;
+    justify-content: baseline;
+}
+
+.feature-menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.feature-menu{
+    height: 70px;
+    display: flex;
+    border-bottom: 1px solid black;
+    align-items: center;
+    justify-content : space-between;
+    box-shadow: 2px 3px 5px 0px rgb(189, 184, 184);
+}
+
+.vacant{
+    flex-basis: 30%;
+}
+
+#feature-text{
+    font-size: 27px;
+    font-weight: bold;
+    padding-right: 5px;
+}
