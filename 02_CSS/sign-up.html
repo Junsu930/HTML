@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/sign-up.css">
+        <title>sign-up</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="title"><h1>회원가입</h1></div>
+                <div class="subtitle"><h3>요즘 생활의 소중함을 잊지 마세요</h3></div>
+            </header>
+            <content>
+                <!-- 가입창 -->
+                <div class="main-input">
+                    <form action="#" name="signup-content">
+                        <div><input type="email" name="emailId" placeholder="아이디"></div>
+                        <div><input type="password" name="password1" placeholder="비밀번호"></div>
+                        <div><input type="password" name="password2" placeholder="비밀번호 확인"></div>
+                        <div><input type="text" name="name" placeholder="이름"></div>
+                        <div>
+                            <input type="tel" name="phone" placeholder="핸드폰번호">
+                            <button type="button">인증번호</button>
+                        </div>
+                        <div>
+                            <input type="number" name="phone-verify" placeholder="인증번호">
+                            <button type="button">인증확인</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- 동의창 -->
+                <div class="agreement">
+                    <fieldset class="using-agreement">
+                        <div>
+                            <label>
+                                <input type="checkbox" name="all">모두 동의하기
+                            </label>
+                        </div>
+                        <!-- 공백 선 -->
+                        <div class="vacant">
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="age-agree">[필수]만 14세 이상입니다.
+                            </label>
+                            <button type="button">더보기</button>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="vita-agree">[필수]요생소 이용약관 동의
+                            </label>
+                            <button type="button">더보기</button>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="change-agree">[필수]전자 금융 거래 이용약관
+                            </label>
+                            <button type="button">더보기</button>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="info-agree">[필수]개인정보 수집 및 이용 동의
+                            </label>
+                            <button type="button">더보기</button>
+                        </div>
+                    </fieldset>
+                </div>
+                <!-- 가입 버튼 -->
+                <div class="main-button">
+                    <div><button>가입하기</button></div>
+                    <div class="vacant2"></div>
+                    <!-- 공백 선 -->
+                    <div><button><img src="src/kakao_login_medium_wide.png"></button></div>
+                    <div><button>구글 가입</button></div>
+                </div>
+            </content>
+        </main>
+    </body>
+</html>
