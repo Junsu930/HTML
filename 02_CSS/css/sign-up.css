@@ -16,18 +16,29 @@ main {
     justify-content: center;
 }
 
-/* div{
+div{
     border : 1px solid black;
-} */
+}
+
+
 
 header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     flex-basis: 20%;
     margin-top: 100px;
 }
+
+header div{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-size: 50px;
+    margin : 10px
+}
+
+
 
 content{
     flex-basis: 80%;
