@@ -27,7 +27,7 @@ header{
 }
 
 #faq-title-head{
-    font-size: 40px;
+    font-size: 50px;
     font-family: '돋음';
     font-weight: 600;
     margin-bottom: 20px;
@@ -95,7 +95,7 @@ header{
     display: flex;
 }
 
-#accordionFlushExample{
+.accordion.accordion-flush{
     width: 1130px;
 }
 
