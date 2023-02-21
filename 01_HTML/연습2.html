@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>연습2</title>
+    </head>
+    <body>
+        <h1>회원가입</h1>
+        <fieldset>
+            <legend>필수 입력 사항</legend>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <td>
+                        <input type="text" placeholder="아이디 10글자 이내">
+                    </td>
+                    <td>
+                        <input type="button" value="중복 확인">
+                    </td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td colspan="2"><input size="30" type="password" placeholder="영문,숫자,특수문자 포함 8자 이상"></td>
+                </tr>
+                <tr>
+                    <th>비밀번호 확인</th>
+                    <td colspan="2"><input size="30" type="password"></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="text"></td>
+                    <td><select>
+                            <option>직접입력</option>
+                            <option>네이버</option>
+                            <option>지메일</option>
+                    </select></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>추가 정보</legend>
+            프로필 사진 <input type="file"><br><br>
+            성별 : <label for="female">여자</label><input type="radio" name="gender" id="female">
+            <label for="male">남자</label><input type="radio" name="gender" id="male">
+            <br><br>
+            생년월일 : <input type="date">
+        </fieldset>
+        
+    </body>
+</html>

@@ -12,8 +12,8 @@ body{
     height: 100vh;
     margin : auto
 }
-
-/* div{
+/* 
+div{
     border: 1px solid black;
 } */
 
@@ -59,8 +59,8 @@ body{
 
 
 .cart-in-product{
-    width: 900px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     margin: auto;
     margin-top: 10px;
     display: flex;
