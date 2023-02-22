@@ -24,7 +24,6 @@ div{
     display: flex;
     align-items: flex-end;
     position: relative;
-    
 }
 
 .info-bar span{
@@ -156,7 +155,7 @@ div{
 }
 
 #counting-input{
-    width: 57px;
+    width: 27px;
 }
 
 
@@ -190,4 +189,31 @@ div{
     border-color: #2678F3;
     color: white;
     cursor: pointer;
+}
+
+.slider-wrap{
+    display: flex;
+}
+
+.slider-wrap >div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+
+}
+
+.slider-wrap >div:nth-child(1){
+    background-color: #2678F3;
+}
+.slider-wrap >div:nth-child(2){
+    background-color: beige;
+}
+.slider-wrap >div:nth-child(3){
+    background-color: darkgoldenrod;
+}
+.slider-wrap >div:nth-child(4){
+    background-color: darkslategrey;
+}
+.slider-wrap >div:nth-child(5){
+    background-color: darkkhaki;
 }
