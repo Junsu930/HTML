@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=IBM+Plex+Sans+KR&display=swap');
+
 *{
     box-sizing : border-box;
+    font-family: 'Gugi', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
 body {

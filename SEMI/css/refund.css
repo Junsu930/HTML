@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=IBM+Plex+Sans+KR&display=swap');
+
 *{
-    box-sizing: border-box;
+    box-sizing : border-box;
+    font-family: 'Gugi', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
 body{
@@ -56,13 +60,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 10px;
-}
-
-.product-info{
-    flex-basis: 70%;
-    width: 90%;
-    height: 90%;
-    background-color: aqua;
+    width: 80%;
 }
 
 .price-tag{
@@ -83,11 +81,18 @@ body{
     height: 90%;
 }
 
+.refund-in-product-border>div{
+    text-align: center;
+}
+
+
 .refund-in-product-border>div:nth-child(1){
     flex-basis: 25%;
+ 
 }
 .refund-in-product-border>div:nth-child(2){
     flex-basis: 25%;
+
 }
 .refund-in-product-border>div:nth-child(3){
     flex-basis: 10%;
@@ -97,4 +102,51 @@ body{
 }
 .refund-in-product-border>div:nth-child(5){
     flex-basis: 20%;
+}
+
+.product-detail-price{
+    align-self: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.product-detail-price > div:first-child{
+    flex-basis: 70%;
+    margin-bottom : 70px;
+}
+
+.product-detail-price > div:last-child{
+    flex-basis: 3%;
+}
+
+.price-tag{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-top: 1px solid gainsboro;
+}
+
+
+.price-tag > div:first-child{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.price-tag > div:last-child{
+    margin: auto;
+    margin-top: 10px;
+}
+
+#refund-button{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #2678F3;
+    border-color: #2678F3;
+    color: white;
+    cursor: pointer;
 }

@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=IBM+Plex+Sans+KR&display=swap');
+
 *{
-    box-sizing: border-box;
+    box-sizing : border-box;
+    font-family: 'Gugi', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
 body{
@@ -200,7 +204,7 @@ div{
     align-items:center;
   }
   .post-slider .post-wrap{
-    border: 1px solid black;
+    border: 1px solid gainsboro;
     width:800px;
     height:200px;
     margin:0px auto;
