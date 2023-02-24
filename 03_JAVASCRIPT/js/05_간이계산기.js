@@ -6,18 +6,16 @@ function sum(){
    const a = Number(val1.value);
    const b = Number(val2.value);
     
-    let sum = a+b;
     
-    result.innerHTML = sum;
+    result.innerHTML = a+b;
 }
 
 function min(){
     const a = Number(val1.value);
     const b = Number(val2.value);
+   
     
-    let min = a-b;
-    
-    result.innerHTML =  min;
+    result.innerHTML =  a-b;
 }
 
 function mul(){
