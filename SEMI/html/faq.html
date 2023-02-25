@@ -4,26 +4,70 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/SEMI/css/faq.css" type="text/css">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="/SEMI/css/faq.css" type="text/css">
         <title>FAQ 페이지</title>
+        <script src="https://kit.fontawesome.com/3e3bbde124.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-        <script>
-           $(document).ready(function(){
-                $('ul.tap-list li').click(function(){
-                   
-                    var tab_id = $(this).attr('data-tab');
-                    
-                    $('ul.tap-list li').removeClass('current');
-                    $('.faq-contents').removeClass('current');
-                    
-                    $(this).addClass('current');
-                    $("#" + tab_id).addClass('current');
-                })
-            });
-        </script>
+
     </head>
+    <header>
+      <section class="navSection">
+
+
+          <!-- 로고 영역 -->
+          <section class="home-logo">
+              <a href="#">
+                  <img src="../common/common/img/logo.png" width="70" alt="로고입니다." id="pageLogo">
+              </a>
+          </section>
+
+          <!-- 메뉴 영역 -->
+      
+          <nav class="menu">
+              <ul>
+                  <li><a href="#">전제품</a></li>
+                  <li><a href="#">신상품</a></li>
+                  <li><a href="#">고객리뷰</a></li>
+              </ul>
+          </nav>
+      
+          <!-- 검색바 영역 --> 
+
+          <section class="search">
+              <article>
+                  <form action="#" name="search-form">
+                      <fieldset id="search-fieldSet"> 
+                          <!-- <button onfocus="onfocus()"> -->
+                              <button type="button" class="fa-sharp fa-solid fa-magnifying-glass" id="img" ></button>
+                          <!-- </button>     -->
+                          <input type="search" name="query" autocomplete="off" placeholder="원하는 비타민을 검색해봐~" id="query" size="50"
+                          onfocusout="onfocusout()">
+                      </fieldset>
+                  </form>
+              </article>
+          </section>
+
+          <!--장바구니 -->
+      
+          <section class="cart">
+              <!-- button : onclick="moveToMain()" -->
+              <button href="#" class="fa-solid fa-cart-shopping" id="cart-button"></button>
+
+              <!-- 로그인/회원가입 -->
+              <a href="#" class="fa-solid fa-user"></a>
+              <a href="#" class="fa-solid fa-user-plus"></a>
+              <a href="#" class="fa-sharp fa-solid fa-headset"></a>
+          </section>
+          <section>
+              
+          </section>
+      </section>
+          
+    </header>
+
+
     <body>
         <main>
             <header>
@@ -158,12 +202,13 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseeight">
                                   <div class="button-con">
                                     <div>주문/결제</div>
-                                    <div>회원 정보를 변경하고 싶어요.</div>
+                                    <div>결제 방법은 어떻게 되나요?</div>
                                   </div>
                                 </button>
                               </h2>
                               <div id="flush-collapseeight" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">회원 정보는 홈페이지 -> 마이페이지에서 변경 가능합니다. 감사합니다.</div>
+                                <div class="accordion-body">주문은 현금 계좌이체와 카드 결제를 지원하고 있습니다. 
+                                  <br>추후에 다른 결제 방식을 추가할 예정입니다. 감사합니다.</div>
                               </div>
                             </div>
                             <div class="accordion-item">
@@ -317,12 +362,14 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne4" aria-expanded="false" aria-controls="flush-collapseOne4">
                               <div class="button-con">
                                 <div>주문/결제</div>
-                                <div>회원 정보를 변경하고 싶어요.</div>
+                                <div>결제 방법은 어떻게 되나요?.</div>
                               </div>
                             </button>
                           </h2>
                           <div id="flush-collapseOne4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample4">
-                            <div class="accordion-body">회원 정보는 홈페이지 -> 마이페이지에서 변경 가능합니다. 감사합니다.</div>
+                            <div class="accordion-body">주문은 현금 계좌이체와 카드 결제를 지원하고 있습니다. 
+                              <br>추후에 다른 결제 방식을 추가할 예정입니다. 감사합니다.
+                            </div>
                           </div>
                         </div>
                         <div class="accordion-item">
@@ -403,5 +450,58 @@
                 </div>
             </div>
         </main>
-    </body>
+      </body>
+         <!-- footer 영역 시작 -->
+     <section class="footer">
+      <!-- 로고, 글 있는 영역 -->
+      <section class="footer-1">
+          <div>
+              <img src="../common/common/img/logo.png" width="70" alt="로고입니다." id="footerLogo">
+          </div>
+          <div>
+              <pre>
+       회사명 : 요즘 생활의 소중함
+       대표자 : 이현경
+       사업자등록번호 : 209-12-12345
+       통신판매업신고 : 2022-서울강남-1111호
+       회사주소 : 서울특별시 강남구 테헤란로 130 호산빌딩 5F, 6F  
+      </pre>
+          </div>
+          
+          <div>
+              <pre>
+                  C/S  CENTER
+                  TEL : 02 - 1234 - 5678
+                  OPEN : 평일 10 :00 ~ 17:00
+                  (주말 및 공휴일 휴무)
+                  E-MAIL : yosangso @yss.co.kr
+              </pre>
+          </div>
+          
+          <div>
+              <div>
+                  <pre>
+          SERVICE
+          고객님은 안전거래를 위해 현금 등으로
+          결제시 저희 쇼핑몰에서 가입한 
+          구매안전 서비스를 이용하실 수 있습니다.
+      </pre>
+          
+      </div>
+    </div>
+    </section>
+
+    <!-- 이용약관 있는 영역 -->
+    <section class="footer-2">
+      <div>
+          <a href="#">이용약관</a><span>|</span>
+          <a href="#">개인정보처리방침</a><span>|</span>
+          <a href="#">FAQ</a><span>|</span>
+          <a href="#">고객센터</a>
+      </div>
+      <div></div>
+    </section>
+    </section>
+
+    <script src="../js/faq.js"></script>
 </html>

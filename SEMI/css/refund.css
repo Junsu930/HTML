@@ -79,6 +79,7 @@ body{
     align-items: center;
     width: 100%;
     height: 90%;
+    border-bottom: 1px solid gainsboro;
 }
 
 .refund-in-product-border>div{
@@ -126,13 +127,13 @@ body{
     display: flex;
     width: 100%;
     justify-content: space-around;
-    border-top: 1px solid gainsboro;
+    
 }
 
 
 .price-tag > div:first-child{
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .price-tag > div:last-child{
@@ -150,3 +151,305 @@ body{
     color: white;
     cursor: pointer;
 }
+
+
+ /* 네비바 */
+
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header{
+    flex-basis: 10%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+header > section:nth-child(1) {
+    /* border: 3px solid red; */
+    /* position: sticky;
+    top: 0; */
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-weight: bold;
+    
+}
+
+button{
+    cursor: pointer;
+}
+
+
+
+.navSection{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: sticky;
+    
+}
+
+/* 
+@media (max-width: 800px) {
+    .navSection {
+      background-color: tomato;
+    }
+  } */
+
+
+
+/* 로고영역 */
+
+
+.home-logo{
+    /* border:1px solid blue; */
+    display: flex;
+    flex-basis: 5%; 
+    padding-top: 20px;  
+}
+
+#pageLogo{
+    scale: 130%;
+}
+
+.menu{
+    /* border:1px solid green; */
+    flex-basis: 25%;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+
+
+/* 로고 영역 끝 */
+
+
+
+/* 검색바 영역  */
+
+
+.search{
+    flex-basis: 30%;
+    display: flex;
+    /* border:1px solid blue; */
+    justify-content: flex-end;
+}
+
+
+#search-fieldSet{
+    
+    border:none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.search button{
+    border:none;
+    background-color: transparent;
+    scale: 130%;
+}
+
+.search input{
+    height: 25px;
+    outline: none;
+}
+
+i {
+    border:none;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+
+#query{
+    visibility: hidden;
+    transition-duration: 1s;
+    width: 0px;
+}
+
+
+/* 검색바 영역 끝 */
+
+
+
+
+
+/* 장바구니  영역 시작 */
+
+.cart{
+    
+    display: flex;
+    /* border: 1px solid blue; */
+    flex-basis: 30%;
+    justify-content: center;
+}
+
+.cart a{
+    padding-right: 25px;
+    padding-left:25px;
+}
+
+
+.cart > a:nth-child(4){
+    scale: 110%;
+}
+
+
+
+#cart-button{
+    background-color: transparent;
+    border:none;
+    padding-left: 10px;
+    padding-right: 30px;
+    scale: 110%;
+}
+
+
+/* 장바구니 영역 끝 */
+
+
+
+/* footer 영역 시작 */
+
+/* #footerLogo{
+    
+    scale: 130%;
+} */
+
+
+
+
+.footer{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid rgba(0,0,0,0.1);
+
+    margin-top: 30%;
+}
+
+.footer-1{
+    display: flex;
+    flex-basis: 70%;
+    /* border: 1px solid red; */
+}
+
+
+.footer-1 div{
+    justify-content: center;
+    align-items: center;
+    /* border: 1px  solid blue; */
+}
+
+/* 풋터 첫 번째 영역 */
+
+.footer-1 div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    flex-basis: 20%;
+}
+
+.footer-1 div > img{
+    width: 70%;
+    justify-content: center;
+    align-items: ceneter;
+    padding-top: 10px;
+}
+
+
+/* 풋터 두 번째 영역 */
+
+
+.footer-1 div:nth-child(2){
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    
+}
+
+/* 풋터 세 번째 영역 */
+
+.footer-1 div:nth-child(3){
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 13px;
+}
+
+
+/* 풋터 네 번째 영역 */
+
+.footer-1 div:nth-child(4){
+    
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding-right: 20px;
+}
+
+
+
+.footer-1 div:nth-child(4) > div{
+    display: flex;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    
+}
+
+
+
+.footer-2{
+    display: flex;
+    flex-basis: 30%;
+    border: 1px solid rgba(0,0,0,0.1);
+    
+}
+
+
+.footer-2 div{
+    display: flex;
+    /* border: 1px solid red; */
+    flex-basis: 50%
+}
+
+.footer-2 div{
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left : 20px;
+}
+
