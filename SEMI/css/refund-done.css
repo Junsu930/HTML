@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=IBM+Plex+Sans+KR&display=swap');
+
+*{
+    box-sizing : border-box;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    margin : 0;
+    padding: 0;
+}
+
+.content{
+    width: 1140px;
+    height: 150%;
+    margin : auto;
+    display:flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+/* div{
+    border: 1px solid black;
+} */
+
+
+
+/* 환불 바 */
+.info-bar{
+    height: 200px;
+    border-bottom: 2px solid grey;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+
+}
+
+.info-bar span:first-child{
+    font-weight: bold;
+    color: black;
+    margin-left: 10px;
+    font-size: 25px;
+    padding: 10px;
+
+}
+
+.info-bar > div:first-child{
+    margin-bottom: 10px;
+
+}
+
+.info-bar > div:last-child{
+    position: absolute;
+    right: 10px;
+    bottom: 2px;
+}
+
+.info-bar > div:last-child > span{
+    font-size: 10px;
+}
+
+.menu-head{
+    display: flex;
+    height: 25px;
+    
+}
+
+.menu-head > div{
+    padding-top: 2px;
+    text-align: center;
+    font-size: 10px;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+
+
+
+.menu-head >div:nth-child(1){
+    flex-basis: 40%;
+}
+.menu-head >div:nth-child(2){
+    flex-basis: 15%;
+}
+.menu-head >div:nth-child(3){
+    flex-basis: 15%;
+}
+.menu-head >div:nth-child(4){
+    flex-basis: 30%;
+}
+
+/* 상품 목록 */
+
+.goods-detail{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goods-detail>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goods-detail > div:nth-child(1){
+    flex-basis: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 상품 이미지 */
+#goods-image{
+    width: 80%;
+    height: 80%;
+}
+/* 상품 설명 */
+.goods-detail > div:nth-child(2){
+    flex-basis: 20%;
+    height: 100%;
+    font-size: 13px;
+    padding-top: 15px;
+    justify-content: baseline;
+    align-items: baseline;
+
+}
+.goods-detail > div:nth-child(3){
+    flex-basis: 15%;
+    height: 100%;
+}
+.goods-detail > div:nth-child(4){
+    flex-basis: 15%;
+    height: 100%;
+}
+.goods-detail > div:nth-child(5){
+    flex-basis: 30%;
+    height: 100%;
+}
+
+.last-line{
+    height: 30px;
+    display: flex;
+    justify-content: end;
+    background-color: rgba(38, 120, 243, 10%);
+}
+
+.end-line{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    border-top: 1px solid gray;
+    font-size: 12px;
+}
+ /* 네비바 */
+
+.last-line{
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+header{
+    flex-basis: 10%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+header > section:nth-child(1) {
+    /* border: 3px solid red; */
+    /* position: sticky;
+    top: 0; */
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-weight: bold;
+    
+}
+
+button{
+    cursor: pointer;
+}
+
+
+
+.navSection{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: sticky;
+    
+}
+
+/* 
+@media (max-width: 800px) {
+    .navSection {
+      background-color: tomato;
+    }
+  } */
+
+
+
+/* 로고영역 */
+
+
+.home-logo{
+    /* border:1px solid blue; */
+    display: flex;
+    flex-basis: 5%; 
+    padding-top: 20px;  
+}
+
+#pageLogo{
+    scale: 130%;
+}
+
+.menu{
+    /* border:1px solid green; */
+    flex-basis: 25%;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+
+
+/* 로고 영역 끝 */
+
+
+
+/* 검색바 영역  */
+
+
+.search{
+    flex-basis: 30%;
+    display: flex;
+    /* border:1px solid blue; */
+    justify-content: flex-end;
+}
+
+
+#search-fieldSet{
+    
+    border:none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.search button{
+    border:none;
+    background-color: transparent;
+    scale: 130%;
+}
+
+.search input{
+    height: 25px;
+    outline: none;
+}
+
+i {
+    border:none;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+
+#query{
+    visibility: hidden;
+    transition-duration: 1s;
+    width: 0px;
+}
+
+
+/* 검색바 영역 끝 */
+
+
+
+
+
+/* 장바구니  영역 시작 */
+
+.cart{
+    
+    display: flex;
+    /* border: 1px solid blue; */
+    flex-basis: 30%;
+    justify-content: center;
+}
+
+.cart a{
+    padding-right: 25px;
+    padding-left:25px;
+}
+
+
+.cart > a:nth-child(4){
+    scale: 110%;
+}
+
+
+
+#cart-button{
+    background-color: transparent;
+    border:none;
+    padding-left: 10px;
+    padding-right: 30px;
+    scale: 110%;
+}
+
+
+/* 장바구니 영역 끝 */
+
+
+
+/* footer 영역 시작 */
+
+/* #footerLogo{
+    
+    scale: 130%;
+} */
+
+
+
+
+.footer{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid rgba(0,0,0,0.1);
+    margin-top: 800px;
+    font-size: 12px;
+}
+
+.footer-1{
+    display: flex;
+    flex-basis: 70%;
+    /* border: 1px solid red; */
+}
+
+
+.footer-1 div{
+    justify-content: center;
+    align-items: center;
+    /* border: 1px  solid blue; */
+}
+
+/* 풋터 첫 번째 영역 */
+
+.footer-1 div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    flex-basis: 20%;
+}
+
+.footer-1 div > img{
+    width: 70%;
+    justify-content: center;
+    align-items: ceneter;
+    padding-top: 10px;
+}
+
+
+/* 풋터 두 번째 영역 */
+
+
+.footer-1 div:nth-child(2){
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    
+}
+
+/* 풋터 세 번째 영역 */
+
+.footer-1 div:nth-child(3){
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 13px;
+}
+
+
+/* 풋터 네 번째 영역 */
+
+.footer-1 div:nth-child(4){
+    
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding-right: 20px;
+}
+
+
+
+.footer-1 div:nth-child(4) > div{
+    display: flex;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    
+}
+
+
+
+.footer-2{
+    display: flex;
+    flex-basis: 30%;
+    border: 1px solid rgba(0,0,0,0.1);
+    
+}
+
+
+.footer-2 div{
+    display: flex;
+    /* border: 1px solid red; */
+    flex-basis: 50%
+}
+
+.footer-2 div{
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left : 20px;
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="숙제2.css">
+        <title>숙제2</title>
+        <style>
+            *{
+                margin: auto;
+            }
+
+            .joinName{
+                font-size: 40px;
+                margin-bottom: 0px;
+            }
+
+            .joinName > div{
+                margin : 4px;
+            }
+
+            #join-form > div:last-child{
+                display: flex;
+                justify-content: center;
+            }
+
+            button{
+                margin: auto;
+                margin-top: 10px;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="joinName">회원가입</div>
+            <form action="name" name="join-form" id="join-form">
+                <div>
+                    <input type="text" name="id" id="id" placeholder="아이디" size="30"><div id="result1"></div>
+                </div>
+                <div>
+                    <input type="password" name="password1" id="pwd1" placeholder="패스워드" size="30"><div id="result2"></div>
+                </div>
+                <div>
+                    <input type="password" name="password2" id="pwd2" placeholder="패스워드 확인" size="30"><div id="result3"></div>
+                </div>
+                <div>
+                    <input type="text" name="name" id="name" placeholder="이름" size="30">
+                </div>
+                <div>
+                    <input type="tel" name="phone" id="phone"  size="30" placeholder="핸드폰 번호(-제외, 010만 가능)">
+                </div>
+                <div class="joomin">
+                        <input type="text" name="joomin1" id="joomin1" maxlength="6" size="10" placeholder="주민번호">
+                    </span> - <span>
+                        <input type="text" name="joomin2" id="joomin2" maxlength="7" size="12">
+                    </span>
+                </div>
+                <div>
+                    <input type="text" name="email" id="email" placeholder="이메일" size="30">
+                </div>
+                <div>
+                    <button type="button" onclick="join()" id="submit" disabled>가입하기</button>
+                </div>
+            </form>
+        </div>
+    <script src="숙제2.js"></script>
+    </body>
+</html>

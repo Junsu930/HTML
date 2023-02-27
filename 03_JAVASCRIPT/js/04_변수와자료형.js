@@ -111,7 +111,7 @@ function typeTest(){
 
    // const user = {"K" : V, "K": V};
 
-   const user = {"id" : "user01", "pw" : "pass01", "num" : 123, "a" :  arr}
+   const user = {"id" : "user01", "pw" : "pass01", "num" : 123, "hobby" : ["게임", "넷플릭스", "음악"]}
    typeBox.innerHTML += "<br><br>user : "+ user +  " / " + typeof user;
    
    console.log(user);
@@ -120,8 +120,8 @@ function typeTest(){
    typeBox.innerHTML += "<br>user.id : " + user.id; 
    typeBox.innerHTML += "<br>user.pw : " + user.pw; 
    typeBox.innerHTML += "<br>user.num : " + user.num; 
-   typeBox.innerHTML += "<br>user.a : " + user.a; 
-   typeBox.innerHTML += "<br>user.a[2] : " + user.a[2]; 
+   typeBox.innerHTML += "<br>user.hobby : " + user.hobby; 
+   typeBox.innerHTML += "<br>user.hobby[2] : " + user.hobby[2]; 
 
    // function
    // 1) 변수명 == 함수명
