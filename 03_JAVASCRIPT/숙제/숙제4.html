@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>숙제4</title>
+        <style>
+            .btn-line{
+                display: flex;
+                justify-content: flex-end;
+                margin: 4px;
+            }
+
+            .btn-line>input{
+                margin-right: 5px;
+            }
+
+            .right{
+                color: green;
+            }
+
+            .bad{
+                color: red;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <form action="main.html" method="get" id="join-form" onsubmit="validate()">
+            <fieldset>
+                <legend>회원 가입 양식</legend>
+                <table>
+                    <tr>
+                        <td>아이디</td>
+                        <td>
+                            <input type="text" id="idBox">
+                        </td>
+                        <td>
+                            <button type="button" id="idCheck">중복확인</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호</td>
+                        <td>
+                            <input type="password" id="pwdBox">
+                        </td>
+                        <td>
+                            <span id="identify"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호확인</td>
+                        <td>
+                            <input type="password" id="pwdBox2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>이름</td>
+                        <td>
+                            <input type="text" id="nameBox">
+                        </td>
+                        <td>
+                            <span id="nameIden"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>성별</td>
+                        <td>
+                            <label>남
+                                <input type="radio" name="gender" value="male">
+                            </label>
+                            <label>여
+                                <input type="radio" name="gender" value="female">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>전화번호</td>
+                        <td><input type="text" id="phone"></td>
+                    </tr>
+                    <tr>
+                        <td>이메일</td>
+                        <td><input type="text" id="mail"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="btn-line"><input type="reset" value="초기화"><button type="submit" id="join">회원가입</button></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    <script src="숙제4.js"></script>
+    </body>
+</html>

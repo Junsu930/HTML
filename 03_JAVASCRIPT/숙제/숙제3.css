@@ -1,0 +1,54 @@
+*{
+    font-size: 20px;
+}
+
+
+
+.container{
+    width: 800px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container > div:first-child{
+    flex-basis: 85%;
+}
+
+.container > div:last-child{
+    flex-basis: 15%;
+}
+
+.box  {
+    display: flex;
+    border : 1px solid black;
+    
+}
+
+.box > div{
+    flex-basis: 20%;
+    transition-duration: 0s;
+    border : 1px solid black;
+
+}
+
+.input-color{
+    display: flex;
+}
+
+.input-color > div{
+    flex-basis: 20%;
+    border : 1px solid black;
+
+}
+
+.input-color input{
+    border: transparent;
+    outline: 0;
+
+    width: 90%;
+}
+
+.change-dur{
+    margin-top: 20px;
+}
