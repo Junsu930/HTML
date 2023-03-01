@@ -1,0 +1,439 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vh;
+    height: 1440px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header{
+    flex-basis: 10%;
+    display: flex;
+    /* border: 3px solid black; */
+    width: 1440px;
+    position: sticky;
+    background-color: white;
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+p {
+    font-weight: bold;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+
+
+.navSection{
+    flex-basis: 100%;
+    /* border: 3px solid red; */
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 1280px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    position: sticky;
+}
+
+
+
+/* 상단 로고 영역 */
+
+
+.home-logo{
+    display: flex;
+    flex-basis: 10%;
+    /* border: 1px solid blue; */
+    justify-content: center;
+    align-items: center;
+}
+
+#pageLogo{
+    scale: 200%;
+}
+
+
+/* 메뉴 영역 */
+
+.menuBox{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-around; */
+    border: 1px solid red;
+}
+
+
+
+.menu{
+    display: flex;
+}
+
+
+.menu ul{
+    display: flex;
+    list-style: none; 
+}
+
+
+
+/* 검색바 영역 */
+
+.search{
+    flex-basis:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid blueviolet */
+}
+
+#search-fieldSet{
+    border:none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.search button{
+    border:none;
+    background-color: transparent;
+    scale: 150%;
+}
+
+.search input{
+    height: 30px;
+    outline: none;
+}
+
+
+#query{
+    visibility: hidden;
+    transition-duration: 1s;
+    width: 0px;
+}
+
+
+
+/* 장바구니 영역 */
+
+
+
+.cart{
+    display: flex;
+    /* border: 1px solid blue; */
+    flex-basis: 20%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#cart-button{
+    background-color: transparent;
+    border:none;
+    scale: 120%;
+}
+
+
+.cart > a:nth-child(4){
+    scale: 120%;
+}
+
+
+
+
+
+
+/* 컨텐트 영역 */
+
+.content-container{
+    flex-basis: 85%;
+    height: 100%;
+    display: flex;
+    width: 1280px;
+    border: 2px solid green;
+    margin-left: 80px;
+}
+
+
+
+.right{
+    flex-basis:90%;
+    height: 100%;
+    /* border: 2px solid black; */
+    width: 100%;
+    display: flex;
+}
+
+
+
+
+
+
+
+.left{
+    /* border-right:  1px solid rgba(0,0,0,0.2); */
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+
+
+
+.middle-area{
+    margin-top: 55px;
+}
+
+.left > div:nth-child(1){
+    flex-basis: 2%;
+    
+    
+}
+
+.left > div:nth-child(2){
+    flex-basis: 96%;
+    
+}
+
+.left > div:nth-child(3){
+    flex-basis: 2%;
+}
+
+
+.middle-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.middle-area > div:nth-child(1){
+    flex-basis:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-area > div:nth-child(1) > p{
+    text-decoration: underline;
+    display: flex;
+    padding-bottom: 25px;
+}
+
+
+
+.middle-area > div:nth-child(1) a{
+    display: flex;
+    padding-bottom: 25px;
+    
+}
+
+
+
+
+
+
+.middle-area > div:nth-child(2){
+    flex-basis:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-area > div:nth-child(2) p{
+    text-decoration: underline;
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.middle-area > div:nth-child(2) a{
+    display: flex;
+    padding-bottom: 25px;
+    
+}
+
+
+
+
+.middle-area > div:nth-child(3){
+    flex-basis:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-area > div:nth-child(3) p{
+    text-decoration: underline;
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.middle-area > div:nth-child(3) a{
+    display: flex;
+    padding-bottom: 25px;
+}
+
+
+
+
+
+.middle-area > div:nth-child(4){
+    flex-basis:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-area > div:nth-child(4) p{
+    text-decoration: underline;
+    display: flex;
+    padding-bottom: 25px;
+}
+
+
+
+.middle-area > div:nth-child(4) a{
+    display: flex;
+    padding-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+/* footer 영역 */
+
+
+
+.footer{
+    /* flex-basis: 15%; */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.footer-1{
+    display: flex;
+    flex-basis: 70%;
+    /* border: 1px solid red; */
+}
+
+
+.footer-1 div{
+    justify-content: center;
+    align-items: center;
+    /* border: 1px  solid blue; */
+}
+
+/* 풋터 첫 번째 영역 */
+
+.footer-1 div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    flex-basis: 20%;
+}
+
+.footer-1 div > img{
+    width: 70%;
+    justify-content: center;
+    align-items: ceneter;
+    padding-top: 10px;
+}
+
+
+/* 풋터 두 번째 영역 */
+
+
+.footer-1 div:nth-child(2){
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    
+}
+
+/* 풋터 세 번째 영역 */
+
+.footer-1 div:nth-child(3){
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 13px;
+}
+
+
+/* 풋터 네 번째 영역 */
+
+.footer-1 div:nth-child(4){
+    
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding-right: 20px;
+}
+
+
+
+.footer-1 div:nth-child(4) > div{
+    display: flex;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    
+}
+
+
+
+.footer-2{
+    display: flex;
+    flex-basis: 30%;
+    border: 1px solid rgba(0,0,0,0.1);
+    
+}
+
+
+.footer-2 div{
+    display: flex;
+    /* border: 1px solid red; */
+    flex-basis: 50%
+}
+
+.footer-2 div{
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left : 20px;
+}
