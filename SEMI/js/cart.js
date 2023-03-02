@@ -1,4 +1,4 @@
-const img = document.getElementById("im");
+const img = document.getElementById("img");
 
 img.addEventListener("click", function(){
     document.getElementById("query").style.visibility="visible";
