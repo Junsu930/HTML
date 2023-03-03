@@ -22,9 +22,9 @@ document.getElementById("btn1").addEventListener("click", function(){
     // for문으로 배열 요소 반복 접근하기
     
     // 1. 일반 for문 - 배열, 컬렉션 
-    // for(let i=0; i<arr4.length; i++){
-    //     console.log(arr4[i]);
-    // }
+    for(let i=0; i<arr4.length; i++){
+        console.log(arr4[i]);
+    }
 
     // 2. 배열.forEach( function(item, index){반복 수행 코드}) - 배열
     // - item : 현재 접근중인 요소
@@ -37,6 +37,11 @@ document.getElementById("btn1").addEventListener("click", function(){
     // arr4.forEach(function(a, i){
     //     console.log(i + " : " + a)
     // })
+
+    arr4.forEach(function(a, i){
+    	console.log(i + "번째 요소 = " + a);
+    
+    })
     
     // 3. for(item of 배열(또는 컬렉션)){} = 배열, 컬렉션
     // == Java 향상된 for문과 비슷하게 생김
