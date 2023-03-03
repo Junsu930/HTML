@@ -7,6 +7,24 @@
         <script src="https://kit.fontawesome.com/3e3bbde124.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/SEMI/css/refund.css" type="text/css">
         <title>환불페이지</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            (()=>{
+                $.ajax({
+                type:"get",
+                dataText:"text",
+                async:false,
+                url : "http://localhost:8080/vitaShop/CartServlet",
+                data : {param: '1' },
+                success : function(data, textStatus){
+                    let jdata = JSON.parse(data);
+                    document.getElementById("detail").innerHTML = jdata[0];
+                }
+            });
+
+        })();
+
+        </script>
     </head>
     <header>
         <section class="navSection">
@@ -83,10 +101,8 @@
                         <!-- 이름과 가격 -->
                         <div class="product-detail-price">
                             <!-- 상품내용 -->
-                            <div>
-                                네이쳐스 비타,<br>
-                                nature's vita<br>
-                                여성용 고기능 비타민
+                            <div id="detail">
+                                
                             </div>
                             <!-- 개별가격 -->
                             <div>

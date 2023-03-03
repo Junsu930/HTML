@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>05_연습문제1</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                border: 1px solid black;
+
+                margin: 3px;
+            }
+
+
+            .box.third{
+                transition-duration: 1s;
+            }
+
+            .wrap{
+                display: flex;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div>
+                <div class="box first"></div>
+                <input type="text" class="boxinput first" size="9"><br>
+                <button type="button" id="firstButton">색변경</button>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap">
+            <div>
+                <div class="box second"></div>
+                <input type="text" class="boxinput second" size="9"><br>
+                <button type="button" id="secondButton">색변경</button>
+            </div>
+            <div>
+                <div class="box second"></div>
+                <input type="text" class="boxinput second" size="9">
+            </div>
+            <div> 
+                <div class="box second"></div>
+                <input type="text" class="boxinput second" size="9">
+            </div>
+            <div>
+                <div class="box second"></div>
+                <input type="text" class="boxinput second" size="9">
+            </div>
+            <div>
+                <div class="box second"></div>
+                <input type="text" class="boxinput second" size="9">
+            </div>
+            <div>
+                <div class="box second"></div>
+                <input type="text" class="boxinput second" size="9">
+            </div>
+        </div>
+        <hr>
+        <div class="wrap">
+            <div>
+                <div class="box third"></div>
+                <input type="text" class="boxinput third" size="9">
+            </div>
+            <div>
+                <div class="box third"></div>
+                <input type="text" class="boxinput third" size="9">
+            </div>
+            <div>
+                <div class="box third"></div>
+                <input type="text" class="boxinput third" size="9">
+            </div>
+            <div>
+                <div class="box third"></div>
+                <input type="text" class="boxinput third" size="9">
+            </div>
+            <div>
+                <div class="box third"></div>
+                <input type="text" class="boxinput third" size="9">
+            </div>
+            <div>
+                <div class="box third"></div>
+                <input type="text" class="boxinput third" size="9">
+            </div>
+        </div>
+
+        <script>
+            $('#firstButton').on("click",()=>{
+                let change = $('.boxinput.first').val();
+               $('.box.first').css("backgroundColor", change);
+            })
+
+            $('#secondButton').on("click", ()=>{
+                const boxArr = $('.box.second');
+                const inputArr = $('.boxinput.second');
+
+                for(let i =0; i<boxArr.length; i++){
+                    $(boxArr[i]).css("backgroundColor", $(inputArr[i]).val());
+                }
+            })
+            
+            // $(".boxinput.third").on("input", function(){
+
+
+
+            //     $(this).css("borderColor", $(this).val());
+            //     $(this).prev().css("backgroundColor", $(this).val());
+            // })
+
+            $(".boxinput.third").on("input", e=>{
+                const curBox = $(e.target);
+
+                curBox.css("borderColor", curBox.val());
+                curBox.prev().css("backgroundColor", curBox.val());
+            })
+
+        </script> 
+    </body>
+</html>
