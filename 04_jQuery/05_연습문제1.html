@@ -94,18 +94,32 @@
 
         <script>
             $('#firstButton').on("click",()=>{
-                let change = $('.boxinput.first').val();
-               $('.box.first').css("backgroundColor", change);
+                
+                $('.box.first').css("backgroundColor", $('.boxinput.first').val());
+
             })
 
-            $('#secondButton').on("click", ()=>{
-                const boxArr = $('.box.second');
-                const inputArr = $('.boxinput.second');
+            // $('#firstButton').on("click",()=>{
+            //     let change = $('.boxinput.first').val();
+            //    $('.box.first').css("backgroundColor", change);
+            // })
 
-                for(let i =0; i<boxArr.length; i++){
+            $('#secondButton').on("click",()=>{
+                let boxArr = $('.box.second');
+                let inputArr = $('.boxinput.second');
+
+                for(let i = 0; i<boxArr.length; i++){
                     $(boxArr[i]).css("backgroundColor", $(inputArr[i]).val());
                 }
             })
+            // $('#secondButton').on("click", ()=>{
+            //     const boxArr = $('.box.second');
+            //     const inputArr = $('.boxinput.second');
+
+            //     for(let i =0; i<boxArr.length; i++){
+            //         $(boxArr[i]).css("backgroundColor", $(inputArr[i]).val());
+            //     }
+            // })
             
             // $(".boxinput.third").on("input", function(){
 
@@ -115,11 +129,9 @@
             //     $(this).prev().css("backgroundColor", $(this).val());
             // })
 
-            $(".boxinput.third").on("input", e=>{
-                const curBox = $(e.target);
-
-                curBox.css("borderColor", curBox.val());
-                curBox.prev().css("backgroundColor", curBox.val());
+            $(".boxinput.third").on("input", good=>{
+                $(good.target).prev().css("backgroundColor", $(good.target).val());
+                $(good.target).css("borderColor", $(good.target).val());
             })
 
         </script> 

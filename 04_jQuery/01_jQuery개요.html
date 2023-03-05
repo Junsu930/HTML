@@ -77,8 +77,8 @@
         ** 중요! jQuery를 나타내는 기호는 '$'이다. 
 
         - ready() 함수 작성 방법 3가지 
-        1. jQuery(document).ready(function { 코드;});
-        2. $(document).ready(function{코드;});
+        1. jQuery(document).ready(function() { 코드;});
+        2. $(document).ready(function(){코드;});
         3. $(function() {코드;}); 
 
         </pre>
@@ -105,7 +105,7 @@
         <script>
 
             // 문서 로딩이 완료된 후 마지막에 수행
-            jQuery(document).ready(()=>{
+            jQuery(document).ready(function(){
                 $("#test2").text("ready()함수 테스트");
                 // $("#test2") : 아이디가 test2인 요소
                 // .text("ready()함수 테스트") : 요소의 내용으로 출력
