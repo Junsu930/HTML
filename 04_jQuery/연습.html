@@ -4,61 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <title>연습</title>
     <style>
-        div{
-            display: flex;
-        }
-        
-        .div2{
-            width: 100px;
-            height: 100px;
-            border: 1px solid black;
-            margin: 5px;
-        }
+            .box{
+                width: 100px;
+                height: 100px;
+                border: 1px solid black;
+                transition-duration: 1s;
+                margin: 3px;
+            }
 
+            .wrap{
+                display: flex;
+            }
         input{
             margin: 6px;
         }
 
-
     </style>
 </head>
 <body>
-    <div>
-        <div class="div2"></div>
-        <div class="div2"></div>
-        <div class="div2"></div>
-        <div class="div2"></div>
-        <div class="div2"></div>
-    </div>
-
-    <div class="area">
-        <input type="text" class="input2" size="9">
-        <input type="text" class="input2" size="9">
-        <input type="text" class="input2" size="9">
-        <input type="text" class="input2" size="9">
-        <input type="text" class="input2" size="9">
-    </div>
-
-
+    <form action="#">
+        <div class="wrap">
+            <div>
+                <div class="box"></div>
+                <input type="text" class="boxinput" size="9">
+            </div>
+            <div>
+                <div class="box"></div>
+                <input type="text" class="boxinput" size="9">
+            </div>
+            <div>
+                <div class="box"></div>
+                <input type="text" class="boxinput" size="9">
+            </div>
+            <div>
+                <div class="box"></div>
+                <input type="text" class="boxinput" size="9">
+            </div>
+            <div>
+                <div class="box"></div>
+                <input type="text" class="boxinput" size="9">
+            </div>
+            <div>
+                <div class="box"></div>
+                <input type="text" class="boxinput" size="9">
+                <button type="reset" id="btn">리셋</button>
+            </div>
+        </div>
+    </form>
     <script>
-        let selecArr = document.querySelectorAll(".area > input");
+        $('.boxinput').on("input", function(){
+           $(this).prev().css("backgroundColor", $(this).val());
+           $(this).css("borderColor", $(this).val()) ;
+        });
 
-        for(let i =0; i<selecArr.length; i++){
-            selecArr[i].addEventListener("keyup", ()=>{
-                const divArr = document.getElementsByClassName("div2");
-                const inputArr = document.getElementsByClassName("input2");
-
-                for(let i=0; i<divArr.length; i++ ){
-                    divArr[i].style.backgroundColor= inputArr[i].value;
-                }
-
-            })
-        }
-
-        
-
+        $('#btn').on("click", function(){
+            $('.boxinput').css("borderColor", "");
+            $('.boxinput').prev().css("backgroundColor", "");
+            const det = $('.wrap').children().remove();
+            $('.wrap').append(det);
+        });
     </script>
 </body>
 </html>
