@@ -6,7 +6,7 @@ document.getElementById("btn1").addEventListener("click", function(){
     // 자식
     // 요소.childNodes : 요소의 자식 노드를 모두 반환
     // 요소.firstChild : 첫 번째 자식 노드를 탐색해서 반환
-    // 요소.lastChilde : 마지막 자식 노드를 탐색해서 반환
+    // 요소.lastChild : 마지막 자식 노드를 탐색해서 반환
     // 요소.childNodes[인덱스] : 인덱스 번째 자식 노드를 탐색해서 반환
 
     // 형제

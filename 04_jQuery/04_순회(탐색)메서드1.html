@@ -50,7 +50,7 @@
             </div>
             <div class="type"> div(grand parent)
                 <p> p(direct parent)
-                    <span>span</span>
+                    <span id="sp">span</span>
                 </p>
             </div>
         </div>
@@ -77,6 +77,10 @@
                 // div태그를 만나기 이전까지 요소를 선택하여 배경색 변경
                 $('span').parentsUntil('div').css("backgroundColor", "springgreen");
                 
+            })
+
+            document.getElementById("sp").parentNode.addEventListener("click",()=> {
+                alert("어떻게 알았지?");
             })
         </script>
     </body>

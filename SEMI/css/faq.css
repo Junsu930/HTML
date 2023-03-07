@@ -307,7 +307,7 @@ button{
 }
 
 .footer-1 div > img{
-    width: 70%;
+    width: 50%;
     justify-content: center;
     align-items: ceneter;
     padding-top: 10px;
@@ -383,4 +383,8 @@ button{
     justify-content: space-evenly;
     align-items: center;
     padding-left : 20px;
+}
+
+*{
+    font-size: 13px;
 }
