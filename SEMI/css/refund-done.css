@@ -8,7 +8,7 @@
 *{
     box-sizing : border-box;
     font-family: 'Pretendard-Regular';
-
+    font-size: 13px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -69,7 +69,7 @@ body{
 }
 
 .info-bar > div:last-child > span{
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .menu-head{
@@ -91,6 +91,9 @@ body{
     margin: auto;
     width: 80%;
 
+}
+.menu-head >div {
+    font-size: 14px;
 }
 
 .menu-head >div:nth-child(1){
@@ -164,6 +167,10 @@ body{
     background-color: rgba(38, 120, 243, 10%);
 }
 
+.last-line > div{
+    margin-top: 6px;
+}
+
 .end-line{
     width: 80%;
     height: 500px;
@@ -172,7 +179,10 @@ body{
     margin: auto;
     margin-top: 10px;
     border-top: 1px solid gray;
-    font-size: 12px;
+}
+
+.end-line > span{
+    font-size: 15px;
 }
 
 
@@ -359,7 +369,7 @@ button{
 }
 
 .footer-1 div > img{
-    width: 70%;
+    width: 50%;
     justify-content: center;
     align-items: ceneter;
     padding-top: 10px;

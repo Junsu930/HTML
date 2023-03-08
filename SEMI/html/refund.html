@@ -8,30 +8,13 @@
         <link rel="stylesheet" href="/SEMI/css/refund.css" type="text/css">
         <title>환불페이지</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            (()=>{
-                $.ajax({
-                type:"get",
-                dataText:"text",
-                async:false,
-                url : "http://localhost:8080/vitaShop/CartServlet",
-                data : {param: '1' },
-                success : function(data, textStatus){
-                    let jdata = JSON.parse(data);
-                    document.getElementById("detail").innerHTML = jdata[0];
-                }
-            });
-
-        })();
-
-        </script>
     </head>
     <header>
         <section class="navSection">
             <!-- 로고 영역 -->
             <section class="home-logo">
                 <a href="#">
-                    <img src="/SEMI/common/common/img/logo.png" width="70" alt="로고입니다." id="pageLogo">
+                    <img src="/SEMI/common/common/img/logo.png" width="60px" alt="로고입니다." id="pageLogo">
                 </a>
             </section>
             <!-- 메뉴 영역 -->
