@@ -9,169 +9,169 @@
         <title>환불페이지</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
-    <header>
-        <section class="navSection">
-            <!-- 로고 영역 -->
-            <section class="home-logo">
-                <a href="#">
-                    <img src="/SEMI/common/common/img/logo.png" width="60px" alt="로고입니다." id="pageLogo">
-                </a>
-            </section>
-            <!-- 메뉴 영역 -->
-            <div class="menuBox">
-                <nav class="menu">
-                    <ul>
-                        <li><a href="#">전제품</a></li>
-                        <li><a href="#">신상품</a></li>
-                        <li><a href="#">고객리뷰</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- 검색바 영역 --> 
-
-            <section class="search">
-                <article>
-                    <form action="#" name="search-form">
-                        <fieldset id="search-fieldSet"> 
-                            <!-- <button onfocus="onfocus()"> -->
-                                <!-- </button>     -->
-                                <input type="search" name="query" autocomplete="off" placeholder="원하는 비타민을 검색해봐~" id="query" size="50"
-                                onfocusout="onfocusout()">
-                                <button type="button" class="fa-sharp fa-solid fa-magnifying-glass" id="img" onclick="clickSearchBtn()"></button>
-                        </fieldset>
-                    </form>
-                </article>
-            </section>
-
-    
-            <!--장바구니 -->
-        
-            <section class="cart">
-                <!-- button : onclick="moveToMain()" -->
-                <button href="#" class="fa-solid fa-cart-shopping" id="cart-button"></button>
-
-                <!-- 로그인/회원가입 -->
-                <a href="#" class="fa-solid fa-user"></a>
-                <a href="#" class="fa-solid fa-user-plus"></a>
-                <a href="#" class="fa-sharp fa-solid fa-headset"></a>
-            </section>
-            <section>
-                
-            </section>
-        </section>
-    </header>
     <body>
-        <div class="container">
-            <div class="info-bar">
-                <div>
-                    <span>환불신청</span>
+        <header>
+            <section class="navSection">
+                <!-- 로고 영역 -->
+                <section class="home-logo">
+                    <a href="#">
+                        <img src="/SEMI/common/common/img/logo.png" width="60px" alt="로고입니다." id="pageLogo">
+                    </a>
+                </section>
+                <!-- 메뉴 영역 -->
+                <div class="menuBox">
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#">전제품</a></li>
+                            <li><a href="#">신상품</a></li>
+                            <li><a href="#">고객리뷰</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div>
-                    <strong>주문내역번호</strong> : 123124 - 123123
-                </div>
-            </div>
-            <form action="refund-done.html"  name="refund-form" id="main-form" method="get" onsubmit="return false">
-                <div class="outer-line">
-                    
-                    
-                    <div class="refund-in-product-border">
-                        <!-- 이미지 -->
-                        <div>
-                            <div class="img-div">
-                                <img src="/02_CSS/src/330639_208664_214.jpg" id="image2">
-                            </div>
-                        </div>
-                        <!-- 이름과 가격 -->
-                        <div class="product-detail-price">
-                            <!-- 상품내용 -->
-                            <div id="detail">
-                                상품내용입니다.
-                            </div>
-                            <!-- 개별가격 -->
-                            <div>
-                                <span class="prc-color">10,000 </span>원
-                            </div>
-                        </div>
-                        <!-- 개수 -->
-                        <div>
-                            1개
-                        </div>
-                        <!-- 총 가격 -->
-                        <div>
-                            <div>상품 금액</div>
-                            10,000 원
-                        </div>
-                        <!-- 배송비 -->
-                        <div>
-                            <div>배송비</div>
-                            3000 원
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="price-tag">
-                        <div>  
-                            상품 금액 10,000원  +  (배송비) 3000 원 = 최종 결제 금액 13,000원 
-                        </div>
-                        <div>
-                            <button id="refund-button" type="button" onclick="refundTest()">환불하기</button>
-                        </div>
-                    </div>
-                </div>         
-            </form>
+                <!-- 검색바 영역 --> 
+
+                <section class="search">
+                    <article>
+                        <form action="#" name="search-form">
+                            <fieldset id="search-fieldSet"> 
+                                <!-- <button onfocus="onfocus()"> -->
+                                    <!-- </button>     -->
+                                    <input type="search" name="query" autocomplete="off" placeholder="원하는 비타민을 검색해봐~" id="query" size="50"
+                                    onfocusout="onfocusout()">
+                                    <button type="button" class="fa-sharp fa-solid fa-magnifying-glass" id="img" onclick="clickSearchBtn()"></button>
+                            </fieldset>
+                        </form>
+                    </article>
+                </section>
+
+        
+                <!--장바구니 -->
             
-        </div>
-    </body>
-  <!-- footer 영역 시작 -->
-    <section class="footer">
-        <!-- 로고, 글 있는 영역 -->
-        <section class="footer-1">
-            <div>
-                <img src="../common/common/img/logo.png" width="70" alt="로고입니다." id="footerLogo">
-            </div>
-            <div>
-                <pre>
-        회사명 : 요즘 생활의 소중함
-        대표자 : 이현경
-        사업자등록번호 : 209-12-12345
-        통신판매업신고 : 2022-서울강남-1111호
-        회사주소 : 서울특별시 강남구 테헤란로 130 호산빌딩 5F, 6F  
-                </pre>
-            </div>
+                <section class="cart">
+                    <!-- button : onclick="moveToMain()" -->
+                    <button href="#" class="fa-solid fa-cart-shopping" id="cart-button"></button>
 
-            <div>
-                <pre>
-            C/S  CENTER
-            TEL : 02 - 1234 - 5678
-            OPEN : 평일 10 :00 ~ 17:00
-            (주말 및 공휴일 휴무)
-            E-MAIL : yosangso @yss.co.kr
-                </pre>
+                    <!-- 로그인/회원가입 -->
+                    <a href="#" class="fa-solid fa-user"></a>
+                    <a href="#" class="fa-solid fa-user-plus"></a>
+                    <a href="#" class="fa-sharp fa-solid fa-headset"></a>
+                </section>
+                <section>
+                    
+                </section>
+            </section>
+        </header>
+            <div class="container">
+                <div class="info-bar">
+                    <div>
+                        <span>환불신청</span>
+                    </div>
+                    <div>
+                        <strong>주문내역번호</strong> : 123124 - 123123
+                    </div>
+                </div>
+                <form action="refund-done.html"  name="refund-form" id="main-form" method="get" onsubmit="return false">
+                    <div class="outer-line">
+                        
+                        
+                        <div class="refund-in-product-border">
+                            <!-- 이미지 -->
+                            <div>
+                                <div class="img-div">
+                                    <img src="/02_CSS/src/330639_208664_214.jpg" id="image2">
+                                </div>
+                            </div>
+                            <!-- 이름과 가격 -->
+                            <div class="product-detail-price">
+                                <!-- 상품내용 -->
+                                <div id="detail">
+                                    상품내용입니다.
+                                </div>
+                                <!-- 개별가격 -->
+                                <div>
+                                    <span class="prc-color">10,000 </span>원
+                                </div>
+                            </div>
+                            <!-- 개수 -->
+                            <div>
+                                1개
+                            </div>
+                            <!-- 총 가격 -->
+                            <div>
+                                <div>상품 금액</div>
+                                10,000 원
+                            </div>
+                            <!-- 배송비 -->
+                            <div>
+                                <div>배송비</div>
+                                3000 원
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="price-tag">
+                            <div>  
+                                상품 금액 10,000원  +  (배송비) 3000 원 = 최종 결제 금액 13,000원 
+                            </div>
+                            <div>
+                                <button id="refund-button" type="button" onclick="refundTest()">환불하기</button>
+                            </div>
+                        </div>
+                    </div>         
+                </form>
+                
             </div>
-
-            <div>
+            <!-- footer 영역 시작 -->
+            <section class="footer">
+            <!-- 로고, 글 있는 영역 -->
+            <section class="footer-1">
+                <div>
+                    <img src="../common/common/img/logo.png" width="70" alt="로고입니다." id="footerLogo">
+                </div>
                 <div>
                     <pre>
-            SERVICE
-            고객님은 안전거래를 위해 현금 등으로
-            결제시 저희 쇼핑몰에서 가입한 
-            구매안전 서비스를 이용하실 수 있습니다.
+                        회사명 : 요즘 생활의 소중함
+                        대표자 : 이현경
+            사업자등록번호 : 209-12-12345
+            통신판매업신고 : 2022-서울강남-1111호
+            회사주소 : 서울특별시 강남구 테헤란로 130 호산빌딩 5F, 6F  
                     </pre>
-                    
                 </div>
-            </div>
-        </section>
-        <!-- 이용약관 있는 영역 -->
-        <section class="footer-2">
-            <div>
-                <a href="#">이용약관</a><span>|</span>
-                <a href="#">개인정보처리방침</a><span>|</span>
-                <a href="#">FAQ</a><span>|</span>
-                <a href="#">고객센터</a>
-            </div>
-            <div></div>
-        </section>
-    </section>
 
+                <div>
+                    <pre>
+                C/S  CENTER
+                TEL : 02 - 1234 - 5678
+                OPEN : 평일 10 :00 ~ 17:00
+                (주말 및 공휴일 휴무)
+                E-MAIL : yosangso @yss.co.kr
+            </pre>
+                </div>
+
+                <div>
+                    <div>
+                        <pre>
+                SERVICE
+                고객님은 안전거래를 위해 현금 등으로
+                결제시 저희 쇼핑몰에서 가입한 
+                구매안전 서비스를 이용하실 수 있습니다.
+                        </pre>
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- 이용약관 있는 영역 -->
+            <section class="footer-2">
+                <div>
+                    <a href="#">이용약관</a><span>|</span>
+                    <a href="#">개인정보처리방침</a><span>|</span>
+                    <a href="#">FAQ</a><span>|</span>
+                    <a href="#">고객센터</a>
+                </div>
+                <div></div>
+            </section>
+        </section>
+        
     <script src="../js/refund.js"></script>
-</html>
+    </body>
+    </html>
